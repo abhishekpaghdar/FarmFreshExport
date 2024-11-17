@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Sweet potato/images.jpeg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Sweet potato</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Sweet potato/0.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Sweet potato/2.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Sweet potato/3.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Sweet potato/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Sweet potato/images.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+              <li>Soil: Sweet potatoes grow best in well-drained, loose, sandy loam or loamy soil rich in organic matter, with a pH range of 5.5–6.5. Soil with good drainage is important to prevent root rot. Incorporating compost or well-rotted manure helps improve fertility and moisture retention.</li>
+
+              <li> Climate: Sweet potatoes thrive in warm, tropical to subtropical climates with temperatures between 25–30°C. They require a frost-free growing season and full sunlight for at least 6–8 hours per day. Sweet potatoes are sensitive to cold temperatures and should not be planted until the soil has warmed.</li>
+
+              <li> Fertilizer: Apply organic fertilizers, such as compost or well-decomposed manure, before planting. Sweet potatoes also benefit from a balanced N-P-K fertilizer applied about 3–4 weeks after planting to encourage healthy vine and root growth.</li>
+
+              <li> Planting: Sweet potatoes are typically propagated through "slips" (young shoots grown from mature tubers). To grow slips, place mature sweet potatoes in water or soil until they sprout. Once the slips are 15–20 cm long, transplant them into the soil. Plant them 5–10 cm deep, spaced 30–45 cm apart in rows that are 90–120 cm apart.</li>
+
+              <li> Mulching: Apply a layer of organic mulch around the base of the plants to retain moisture, suppress weeds, and regulate soil temperature. Sweet potatoes grow best in a slightly warm and moist environment.</li>
+
+              <li> Watering: Water sweet potatoes regularly, especially during dry periods, but avoid waterlogging. Consistent moisture is important, especially during root development, but the soil should be well-drained to prevent rot.</li>
+
+              <li> Weeding: Begin weeding once the plants are established and continue periodically to reduce competition for nutrients. As sweet potato vines grow, they will naturally shade the soil, reducing weed growth.</li>
+
+              <li> Harvesting: Sweet potatoes are usually ready for harvest 4–5 months after planting, depending on the variety and climate. The leaves and vines will begin to yellow, signaling that the tubers are mature. Carefully dig up the roots to avoid damaging them.</li>
+
+              <li> Post-harvest Management: After harvesting, cure the sweet potatoes by storing them in a warm, humid place for 7–10 days to allow the skins to thicken and the sugars to develop. Store cured sweet potatoes in a cool, dry, well-ventilated area to extend shelf life.               
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

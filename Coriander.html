@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Coriander/5.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Coriander</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Coriander/0.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Coriander/1..jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Coriander/2..jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Coriander/3.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Coriander/4.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Coriander/5.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Coriander grows best in well-drained, fertile, loamy soil with a pH range of 6.2–6.8. The soil should be light and rich in organic matter, as coriander has a delicate root system that requires good aeration. It can tolerate slightly acidic soil, but heavy clay or waterlogged soil should be avoided.</li>
+
+                <li>Climate: Coriander prefers cool, temperate climates with temperatures ranging from 15–25°C. It is sensitive to heat, and temperatures above 30°C can cause the plant to bolt (flower and go to seed) prematurely. Coriander is a short-lived annual and typically grows well in spring or fall when temperatures are milder.</li>
+
+                <li>Fertilizer: Coriander does not require heavy feeding but benefits from soil enriched with compost or well-decomposed organic manure. A balanced fertilizer (N-P-K) can be applied in poor soil to encourage healthy leaf production. Avoid excessive nitrogen as it can lead to rapid growth and a less intense flavor.Like using sour buttermilk, neem oil, lemon etc.</li>
+
+                <li>Planting: Coriander can be grown from seeds, which should be directly sown into the soil. Plant seeds about 1–2 cm deep, spacing them 10–15 cm apart in rows 30–40 cm apart. Coriander seeds can take a few days to germinate, so be patient. For continuous harvest, sow seeds every 2–3 weeks. If growing in containers, ensure there are drainage holes.</li>
+
+                <li>Watering: Coriander prefers consistent moisture, especially during dry spells. Water the plants regularly to keep the soil moist but well-drained. Avoid over-watering, as this can lead to root rot. Drip irrigation is ideal for maintaining soil moisture without wetting the foliage.</li>
+
+                <li>Weeding: Weeding is important early in the growth cycle to prevent competition for nutrients. However, be careful not to disturb the shallow roots of coriander. Mulching can help suppress weeds and retain moisture.</li>
+
+                <li>Thinning: Once seedlings emerge, thin them out to about 10–15 cm apart to give the plants adequate space for healthy growth. This helps prevent overcrowding and improves air circulation around the plants.</li>
+
+                <li>Harvesting: Coriander leaves are ready for harvest 3–4 weeks after sowing. Harvest the outer leaves first, leaving the inner leaves to continue growing. For seed production (coriander seeds), allow the plant to flower and the seeds to ripen on the plant. The seeds should be collected when they turn brown and dry.</li>
+
+                <li>Post-harvest Management: After harvesting the leaves, wash them thoroughly to remove soil and debris. Fresh coriander can be stored in the refrigerator in a sealed container for 1–2 weeks. Alternatively, coriander can be dried or frozen for long-term storage. If storing seeds, ensure they are kept in a cool, dry place.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

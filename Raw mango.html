@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Raw mango/Raw mango.png.webp" alt="Product Image" class="main-image">
+                <h2 class="product-name">Raw mango</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Raw mango/0.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Raw mango/2.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Raw mango/3.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Raw mango/4.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Raw mango/5..png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Raw mango/Raw mango.png.webp" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Mango trees grow best in well-drained, sandy loam or loamy soil with a pH range of 5.5–7.5. Mango trees prefer soil that is not too acidic and requires good drainage, as they are susceptible to root rot in waterlogged conditions. Adding organic matter or compost can help improve the fertility and texture of the soil.</li>
+
+                <li>Climate: Mango trees are tropical and subtropical plants that thrive in warm climates. They require hot and dry conditions with temperatures between 24–30°C for optimal growth. Mango trees can tolerate some drought but require a dry, sunny period during fruit ripening. They are sensitive to frost, so they should be grown in frost-free areas. Mango trees can withstand high temperatures, making them ideal for regions with long, hot summers.</li>
+
+                <li>Fertilizer: Mango trees are moderate to heavy feeders. Apply well-rotted compost, organic manure, or a balanced NPK fertilizer (Nitrogen, Phosphorus, Potassium) to ensure healthy growth. The first application should be at the time of planting, followed by annual applications during the growing season. Mango trees can also benefit from foliar feeding with micronutrients, such as zinc and iron, which are essential for fruit development.</li>
+
+                <li>Planting: Mango trees can be grown from seeds, grafted plants, or tissue culture. Grafted trees are preferred for faster fruit production. When planting, dig a large hole (about 2–3 times the size of the root ball) to ensure the roots have plenty of space to grow. Plant the mango tree at the same depth it was in the nursery. Space the trees about 10–15 meters apart to allow for their large canopy growth.</li>
+
+                <li>Watering: Mango trees are drought-tolerant once established, but young trees require regular watering until they are well established. Water the tree deeply, especially during dry periods, but ensure that the soil is well-drained to avoid waterlogging. Avoid frequent shallow watering as it encourages shallow root growth. Water the tree thoroughly, allowing the soil to dry out between waterings.</li>
+
+                <li>Weeding: Keep the area around the tree free from weeds, especially during the early stages of growth. Weeds can compete with the mango tree for nutrients and water. Mulching around the base of the tree can help suppress weeds, conserve moisture, and maintain an even soil temperature.</li>
+
+                <li>Pruning: Pruning is important for shaping the tree, removing dead or diseased branches, and ensuring good air circulation. Mango trees should be pruned to form a strong central leader with well-spaced branches. For the first few years, remove any suckers or lateral growth that may hinder the tree's development. Once the tree is mature, light pruning is sufficient to maintain shape and remove any crossing branches.</li>
+
+                <li>Pollination: Mango trees are generally self-pollinating, but the presence of pollinators such as bees and butterflies can improve fruit set. Mango flowers are small and fragrant, and they typically bloom in clusters. Ensure that the trees are placed in a location with good airflow and pollinator activity for better fruit production.</li>
+
+                <li>Fruit Setting and Harvesting: Mangoes typically take 4–5 years to start fruiting if grown from grafts and 6–8 years if grown from seed. Mangoes bloom during the spring, and the fruits generally mature 4–5 months after flowering, depending on the variety and climate. The fruits are ready to harvest when they turn a golden yellow color and emit a fragrant aroma. They should be slightly firm but give a little when pressed. Avoid waiting for mangoes to ripen fully on the tree as this can attract pests or lead to over-ripeness.</li>
+
+                <li>Post-harvest Management: After harvesting, mangoes should be handled carefully to avoid bruising. If you plan to store them for a short period, place them in a cool, dry place. Mangoes ripen best at room temperature but can also be refrigerated once ripened. Mangoes can be eaten fresh, used in cooking, or processed into various products such as jams, pickles, juices, or dried mango.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

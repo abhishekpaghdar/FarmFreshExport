@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Wheat/1.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Wheat</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Wheat/5.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Wheat/4.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Wheat/3.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Wheat/2.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Wheat/1.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Wheat grows best in well-drained loam or clay loam soils with a pH range of 6.0–7.0. The soil should be rich in organic matter and nutrients for optimal growth.</li>
+
+                <li>Climate: Wheat thrives in cool, dry climates with temperatures between 10–25°C. It requires a dry climate for ripening, as excess moisture at this stage can affect grain quality.</li>
+
+                <li>Fertilizer: Apply organic fertilizers, such as compost, neem oil, biochar or well-rotted manure before planting. Supplement with nitrogen, phosphorus and potassium-based fertilizers as needed, especially during tillering and heading stages.</li>
+
+                <li>Planting: Prepare the soil by ploughing and leveling it well. Sow wheat seeds in rows with spacing of about 15–20 cm between them, ensuring seeds are sown 3–5 cm deep.</li>
+
+                <li>Transplanting: Wheat is usually direct-seeded rather than transplanted, so plant seeds directly into the prepared field.</li>
+
+                <li>Watering: Wheat requires moderate watering. Irrigate at key stages: tillering, jointing, heading, and grain filling. Avoid waterlogging, especially in the later stages.</li>
+
+                <li>Weeding: Begin weeding 2–3 weeks after planting and continue as necessary to reduce competition and improve yield.</li>
+
+                <li>Harvesting: Wheat is ready to harvest approximately 120–150 days after planting, depending on the variety. Harvest when the grains are firm and golden brown, and the stalks are dry.</li>
+
+                <li>Post-harvest Management: Thresh and clean the harvested wheat to remove chaff and other impurities. Store in a cool, dry, and ventilated area to prevent mold or insect infestation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

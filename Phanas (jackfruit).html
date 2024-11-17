@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Phanas (jackfruit)/Jackfruit.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Phanas (jackfruit)</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Phanas (jackfruit)/0.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Phanas (jackfruit)/1.jpeg.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Phanas (jackfruit)/3.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Phanas (jackfruit)/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Phanas (jackfruit)/5.jpeg.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Phanas (jackfruit)/Jackfruit.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+             <ul>
+                <li>Soil: Jackfruit grows best in well-drained, fertile, and deep loamy soil with a pH range of 6.0–7.5. It prefers slightly acidic to neutral soil and can tolerate a wide variety of soil types, including clay and sandy soils, as long as they are well-draining. Organic matter or compost should be added to the soil to improve its fertility and structure.</li>
+
+                <li>Climate: Jackfruit is a tropical tree that thrives in warm, humid climates. It grows best in temperatures between 25–35°C. Jackfruit trees are sensitive to frost and cold weather, and they require a consistently warm climate to grow properly. The plant needs plenty of sunlight and can tolerate some shade, but it performs best in full sun. Heavy rainfall during the growing season is beneficial, but the tree should be protected from excessive waterlogging.</li>
+
+                <li>Fertilizer: Jackfruit trees are heavy feeders and benefit from regular fertilization. Before planting, enrich the soil with organic matter, such as compost or farmyard manure. Once the tree starts growing, apply a balanced N-P-K fertilizer (Nitrogen, Phosphorus, Potassium) to promote healthy growth. Organic fertilizers like compost slurry, manure, or fish emulsion can be used to maintain soil fertility. It is recommended to fertilize 2–3 times a year, but the frequency may vary depending on the soil's nutrient content.</li>
+
+                <li>Planting: Jackfruit can be propagated from seeds or grafted plants. When planting a seedling, ensure the planting hole is large enough to accommodate the tree's root system. Plant the seedling at the same depth it was in the nursery, and water it immediately after planting. For better results, select a location with enough space for the tree to grow, as jackfruit trees can reach large sizes. Ensure the soil is loose and well-drained to allow for proper root development.</li>
+
+                <li>Watering: Jackfruit requires regular watering, particularly during dry spells. Keep the soil consistently moist but not waterlogged. Young trees need more frequent watering, while mature trees can withstand some drought, though regular watering during the flowering and fruiting stages will improve fruit yield and quality. Avoid overhead watering, as wet leaves can increase the risk of fungal diseases.</li>
+
+                <li>Weeding: Weeding is essential during the early stages of growth, as weeds compete for water and nutrients. Mulching around the base of the tree can help retain moisture, prevent weed growth, and regulate soil temperature. As the tree matures, its large canopy helps suppress weed growth naturally.</li>
+
+                <li>Pruning: Pruning is not necessary for jackfruit trees unless for shaping or removing dead or diseased branches. However, it's a good practice to remove any suckers that grow from the base of the tree to ensure that the tree's energy is focused on producing fruit. Prune the tree's lower branches to allow for better air circulation and light penetration.</li>
+
+                <li>Pollination: Jackfruit trees are typically pollinated by insects such as bees. Ensure that there is an adequate population of pollinators in the area. In some cases, hand pollination may be used to increase fruit set, especially if the tree is in a location with few pollinators.</li>
+
+                <li>Harvesting: Jackfruit trees typically begin to bear fruit 3–4 years after planting (for grafted trees) or 4–6 years for seedling trees. The fruit is ready for harvest when it reaches a large size and has a strong, sweet aroma. The skin should be green or yellow, depending on the variety, and the fruit should feel slightly soft when pressed. Harvest the fruit carefully to avoid damaging the tree or the fruit.</li>
+
+                <li>Post-harvest Management: After harvesting, jackfruit should be processed soon to maintain freshness. The fruit can be consumed fresh or processed into various products such as dried jackfruit, jam, or pickles. The pulp and seeds can be eaten, while the wood can be used for furniture or other applications. For storage, jackfruit can be stored in a cool, dry place for a short period or refrigerated for longer shelf life.</li>
+             </ul>           
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

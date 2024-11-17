@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Amaranthus spinosus/4.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Amaranthus spinosus</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Amaranthus spinosus/0.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Amaranthus spinosus/1.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Amaranthus spinosus/2.jpg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Amaranthus spinosus/3.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Amaranthus spinosus/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Amaranthus spinosus grows best in well-drained, fertile, loamy soil, but it can tolerate a variety of soil types, including sandy loam and clay soils. The soil pH should be between 6.0 and 7.5. Adding organic matter or compost can improve soil fertility and promote healthy growth.</li>
+
+                <li>Climate: This plant thrives in warm, tropical, and subtropical climates with temperatures ranging from 20–35°C. It prefers full sunlight but can tolerate some shade. It is relatively drought-tolerant and can grow in areas with variable rainfall, though regular irrigation during dry periods is beneficial.</li>
+
+                <li>Fertilizer: Amaranthus spinosus benefits from well-rotted compost or organic manure before planting. A balanced N-P-K fertilizer can be used if soil fertility is poor. Avoid over-fertilizing, as excessive nitrogen may lead to excessive leaf growth and reduced seed production.</li>
+
+                <li>Planting: You can grow Amaranthus spinosus from seeds, which should be sown directly into the soil. Plant the seeds 1–2 cm deep, spaced about 15–30 cm apart in rows. This plant can be sown directly in the ground or in seed trays for transplanting when the seedlings are large enough.</li>
+
+                <li>Watering: Regular watering is essential, especially during dry periods. However, avoid waterlogging, as this can lead to root rot. The plant prefers slightly moist soil but can tolerate some drought. Drip irrigation is ideal for maintaining consistent moisture levels.</li>
+
+                <li>Weeding: Weeds should be controlled, especially during the early growth stages, as they compete for nutrients and water. Amaranthus spinosus has a rapid growth habit, and mulching around the base of the plant can help suppress weed growth.</li>
+
+                <li>Thinning: After germination, thin the plants to around 20–30 cm apart to allow sufficient space for growth. This helps the plants develop strong stems and healthy leaves.</li>
+
+                <li>Harvesting: Amaranthus spinosus can be harvested for its leaves and seeds. The leaves are edible and should be harvested when young and tender, typically around 4–6 weeks after planting. For seed production, allow the plant to mature fully, and collect the seeds when the flowers turn brown and dry.</li>
+
+                <li>Post-harvest Management: After harvesting the leaves, wash them thoroughly to remove dirt. For seed harvesting, collect the dried flower heads and thresh them to extract the seeds. Store seeds in a cool, dry place to preserve their viability. The leaves can be eaten fresh or cooked, and they can also be dried for preservation.</li>
+
+
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

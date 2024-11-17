@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Chickpeas/6.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Chickpeas</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Chickpeas/1.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Chickpeas/2.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Chickpeas/3.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Chickpeas/4.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Chickpeas/5.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Chickpeas/6.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>First select the chickpea variety suitable for your climate and soil type. After that, cultivate the soil properly and plant chickpeas with the equipment suitable for the soil. Plant about 18-24 inches apart for proper air flow and easy weeds.</li>
+                <li>Weeding at early stage of growth when chickpeas are 20 days old would be appropriate. For crop and soil development Use organic matter at the right time. Like using sour buttermilk, neem oil, lemon etc.</li>
+                <li>Spraying insecticides like neem oil, jaggery to kill living insects and diseases. After that it will be convenient to Weeding again.</li>
+                <li>First watering after sowing gram in irrigated area. After this, give another water at the time of sprouting i.e. after 20 days. Give third water at 40 to 45 days at flowering and fourth water at 60 to 70 days at seeding. Thus, irrigation is particularly needed in the three emergency situations of chickpea, when the shoot sprouts, when the flower and the seed set. At this time proper use of water and economic benefits.</li>
+                <li>In dry and cold climates, chickpeas cannot tolerate frost. 20 to 30 degree temperature is suitable at the time of sowing. If the weather is rainy or cloudy, the chickpea crop does not set, hence losses. During the crop stage, if there is insufficient cooling or heat increases, the yield is adversely affected.</li>
+                <li>Chickpeas are ready to harvest when the pods turn brown and dry. Hand pruning tools Use sickles to collect plants.</li>
+                <li>After the crop is ready, after drying the chickpeas well, after drying the chickpeas well, store them in a dry airtight container.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

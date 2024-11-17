@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Long chillies/6.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Chilli</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Long chillies/1.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Long chillies/2.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Long chillies/3.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Long chillies/4.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Long chillies/5.png" alt="Thumbnail Image 3" onclick="changeMainImage(this)">
+                <img src="import pro img/Long chillies/6.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Loamy soil with good drainage and a pH of 6.5–7.5 is ideal for growing chilli plants. </li>
+                <li>Climate: Chilli plants grow best in warm, humid climates with temperatures between 20–25°C. Heavy rainfall and high humidity can cause the fruit to rot. </li>
+                <li>Fertilizer: Apply organic fertilizer like compost slurry or banana peel fertilizer every 15–17 days.</li>     
+                <li>Planting: Prepare the soil by ploughing it 2–3 times and adding compost or farm yard manure. Form ridges and furrows at a spacing of 60 cm. </li>
+                <li>Transplanting: Transplant seedlings when they are 4–8 weeks old. Transplant them at night and stop watering them one week before transplanting. </li>
+                <li>Watering: Timely irrigation is important, especially for fruit development and set.</li>
+                <li>Weeding: Begin weeding as soon as the seedlings are established.</li>
+                <li>Harvesting: The fruit is ready to harvest 40–50 days after germination.
+                    Post-harvest management Ensure the harvested materials are washed and cleaned to remove soil particles. Store the produce in a clean, dry, and undamaged area to prevent insect pests.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

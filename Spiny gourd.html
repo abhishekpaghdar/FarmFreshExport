@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Spiny gourd/Spiny gourd.jpg" alt="Product Image"
+                    class="main-image">
+                <h2 class="product-name">Spiny gourd</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Spiny gourd/0.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spiny gourd/1 (1).jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spiny gourd/3 (1).JPG" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spiny gourd/4.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spiny gourd/5.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spiny gourd/Spiny gourd.jpg" alt="Thumbnail Image 2"
+                    onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Spiny gourd grows best in well-drained, sandy loam or loamy soil rich in organic matter, with
+                    a pH range of 6.0–6.5. Adding compost or farmyard manure before planting can improve soil fertility
+                    and moisture retention.</li>
+
+                <li>Climate: Spiny gourd thrives in warm, tropical climates with temperatures between 25–30°C. It
+                    prefers areas with moderate rainfall and ample sunlight. The plant is drought-tolerant once
+                    established but benefits from regular watering during dry spells.</li>
+
+                <li>Fertilizer: Apply organic fertilizers, such as compost or well-decomposed manure, before planting.
+                    Supplement with a balanced N-P-K fertilizer every 3–4 weeks to encourage healthy growth and
+                    fruiting.Like using sour buttermilk, neem oil, lemon etc.</li>
+
+                <li>Planting: Spiny gourd is generally propagated through root tubers or cuttings, as it has a low
+                    germination rate from seeds. Plant tubers or cuttings in well-prepared soil, spaced about 1 meter
+                    apart in rows spaced 1.5–2 meters apart to allow for vine growth.</li>
+
+                <li>Support: Spiny gourd is a climbing vine, so provide support with trellises, stakes, or netting for
+                    vertical growth. This improves airflow, sunlight exposure, and makes harvesting easier.</li>
+
+                <li>Watering: Water regularly, especially during the early growth stage and during flowering and
+                    fruiting. Avoid overwatering, as spiny gourd does not tolerate waterlogged conditions well.</li>
+
+                <li>Weeding: Start weeding once the plants are established, and continue periodically to reduce
+                    competition and support healthy plant growth.</li>
+
+                <li>Harvesting: Spiny gourd fruits are typically ready to harvest 3–4 months after planting. Harvest
+                    when the fruits are small, green, and tender for the best flavor. Mature fruits become hard and
+                    bitter.</li>
+
+                <li>Post-harvest Management: Clean the harvested spiny gourds to remove soil or debris, and store them
+                    in a cool, dry place. Spiny gourd has a relatively short shelf life, so consume or process soon
+                    after harvesting.</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

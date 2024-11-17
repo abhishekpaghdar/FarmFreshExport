@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Cauliflower/Cauliflower.png" alt="Product Image" class="main-image">
+                <h2 class="product-name">Cauliflower</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Cauliflower/0.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Cauliflower/1.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Cauliflower/3.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Cauliflower/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Cauliflower/Cauliflower.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            
+                
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            
+            <ul>
+                <li>Soil: Cauliflower grows best in well-drained loamy or clay loam soils rich in organic matter, with a pH range of 6.0–7.0. Adding compost or well-decomposed manure can improve fertility and moisture retention.</li>
+
+                <li>Climate: Cauliflower thrives in cool, mild climates with temperatures between 15–20°C. It is sensitive to high temperatures, which can cause poor head formation, and frost, which can damage young plants.</li>
+
+                <li>Fertilizer: Apply organic matter, such as compost or manure, before planting. Side-dress with nitrogen-rich fertilizer 3–4 weeks after transplanting and during the head development stage.</li>
+
+                <li>Planting: Start seeds in a nursery or seed tray, and transplant seedlings when they are 4–6 weeks old. Space plants 45–60 cm apart in rows that are 60–75 cm apart to give them enough room to grow.</li>
+
+                <li>Transplanting: Transplant seedlings in the evening or on cloudy days to reduce transplant shock. Water the plants immediately after transplanting to help them establish quickly.</li>
+
+                <li>Watering: Maintain consistent soil moisture, especially during head formation, as cauliflower is sensitive to water stress. Avoid waterlogging, as it can lead to root rot.</li>
+
+                <li>Weeding: Begin weeding as soon as the plants are established and continue regularly to reduce competition and improve airflow around the plants.</li>
+
+                <li>Harvesting: Cauliflower is typically ready to harvest 70–90 days after transplanting. Harvest when the heads are compact, white, and firm, but before they start to separate or discolor.</li>
+
+                <li>Post-harvest Management: Store harvested cauliflower heads in a cool, dry place. Avoid washing them before storage, as excess moisture can lead to decay.</li>    
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script>
+        function changeMainImage(thumbnail) {
+            const mainImage = document.getElementById('main-image');
+            mainImage.src = thumbnail.src;
+        }
+    </script>
+</body>
+<script src="script.js"></script>
+
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Mung/mung.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Mung Beans</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Mung/1.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Mung/2.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Mung/3.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Mung/4.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Mung/5.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>For the cultivation of moong, light loamy soil with good drainage is suitable. 2-3 Ploughings are recommended. Add 200 kg gypsum per acre of land at the time of tillage. For sowing of bold grained moong: 10 kg per acre in Zaid & 6-8 kg per acre in Kharif </li>
+                <li>Weed Control For weed control, one weeding must be done 20-25 days after sowing.For crop and soil development Apply organic matter at the right time.</li>
+                <li>If there is no rain for a long time at the time of growth, then irrigation is necessary for good production of the crop.Spraying substances such as lemon oil, jaggery and insecticides to kill pests and diseases. After that it will be convenient to weed again.</li>
+                <li>Green  Mung can be harvested at 55 to 60 days after planting, yellow variety at 70-75 days . Fruits can be harvested once in 3 to 4 days. </li>
+                <li>Early morning hours are best suited for harvest. After harvest fruits should be kept in cool place and avoid direct exposure to sunlight.</li>
+                <li>Harvesting before the maturity of crop, usually result in lower yields, while delayed harvesting results in shattering of pods and other losses caused by pests. Harvesting during rains and overcast weather invitation to fungal infection.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

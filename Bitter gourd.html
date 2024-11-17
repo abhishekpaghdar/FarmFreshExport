@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Bitter gourd/5.jpeg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Bitter gourd </h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Bitter gourd/0.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Bitter gourd/1.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Bitter gourd/2.jfif" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Bitter gourd/3.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Bitter gourd/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Bitter gourd/5.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Bitter gourd grows best in well-drained, sandy loam or loamy soil rich in organic matter, witha
+                    pH range of 6.0–7.0. Adding compost or manure before planting can help improve soil fertility and
+                    moisture retention.</li>
+
+                <li>Climate: Bitter gourd thrives in warm, tropical to subtropical climates with temperatures between
+                    24–30°C. It requires full sunlight and grows well during the warmer months.
+                </li>
+                <li>Fertilizer: Apply organic fertilizers like compost or farmyard manure before planting. During
+                    growth, a
+                    balanced N-P-K fertilizer can be applied every 3–4 weeks to encourage healthy foliage and fruiting.
+                </li>
+                <li>Planting: Prepare the soil by ploughing and leveling. Sow seeds directly into the soil or start them
+                    in
+                    a nursery tray, and transplant when seedlings have 2–3 true leaves. Space plants about 1 meter apart
+                    in
+                    rows spaced 1.5 meters apart to allow for vine growth.</li>
+
+                <li>Support: Since bitter gourd is a climbing vine, provide support with trellises or stakes for the
+                    plants
+                    to grow vertically. This improves airflow, sunlight exposure, and makes harvesting easier.
+                </li>
+                <li>Watering: Water regularly to maintain consistent soil moisture, especially during flowering and
+                    fruiting. Avoid overwatering, as waterlogged conditions can cause root rot.
+                </li>
+                <li>Weeding: Begin weeding when the plants are established, and continue periodically to reduce
+                    competition
+                    and support healthy growth.
+                </li>
+                <li>Harvesting: Bitter gourd is typically ready for harvest 55–60 days after sowing. Harvest when the
+                    fruits
+                    are green and tender, as they become bitterer as they mature.
+                </li>
+                <li>Post-harvest Management: Wash the harvested bitter gourds to remove soil or debris, and store them
+                    in a
+                    cool, dry place to retain freshness. Bitter gourd has a relatively short shelf life, so consume or
+                    process soon after harvesting.</li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">  
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Raw bananas/1.png" alt="Product Image" class="main-image">
+                <h2 class="product-name">Raw Banana</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Raw bananas/4.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Raw bananas/3.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Raw bananas/2.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Raw bananas/1.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Well-drained, loamy soil with a pH range of 6.0–7.5 is ideal for cultivating raw bananas. Avoid waterlogged conditions to prevent root diseases.</li>
+
+                <li>Climate: Raw bananas thrive in warm, tropical climates with temperatures between 25–35°C. High humidity and moderate rainfall are ideal, but excessive moisture can cause rot.</li>
+
+                <li>Fertilizer: Apply organic fertilizers, such as compost or farmyard manure, every 20–25 days to maintain nutrient levels.</li>
+
+                <li>Planting: Prepare the soil by ploughing it thoroughly and incorporating organic manure. For banana cultivation, plant the suckers or tissue-cultured plants at a spacing of 2.5 x 2.5 meters.</li>
+
+                <li>Transplanting: Use healthy suckers or tissue-cultured plants for transplanting. It's best to plant them in the early morning or late afternoon for minimal transplant shock.</li>
+
+                <li>Watering: Bananas require consistent watering, particularly during the vegetative and fruiting stages, but avoid overwatering, as it may lead to root rot.</li>
+
+                <li>Weeding: Begin weeding after planting, and continue to keep the area weed-free to allow proper growth and reduce competition for nutrients.</li>
+
+                <li>Harvesting: Raw bananas are typically ready for harvest around 8–10 months after planting. Harvest when the fruit reaches full size but before full ripening, depending on the desired level of maturity.</li>
+
+                <li>Post-harvest Management: Clean the harvested bananas to remove soil or debris. Store in a cool, dry area to maintain quality and prevent post-harvest rot and pests.</li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Radish/4.png" alt="Product Image" class="main-image">
+                <h2 class="product-name">Radishes</h2>
+            </div>
+            <div class="thumbnail-images">
+                
+                <img src="Export pro img/Radish/1.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Radish/2.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Radish/3.jpg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Radish/4.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+             <ul>
+                <li>Soil: Radishes grow best in well-drained, loose, fertile soil rich in organic matter, with a pH range of 6.0–7.0. The soil should be free from rocks or hard clumps to allow the roots to grow freely. Add compost or well-decomposed manure to improve soil texture and fertility.</li>
+
+                <li>Climate: Radishes thrive in cooler climates with temperatures between 10–20°C. They can tolerate some heat, but excessively high temperatures may cause them to bolt (flower and go to seed) prematurely. Radishes are typically grown as a cool-season crop.</li>
+
+                <li>Fertilizer: Radishes are light feeders, but a small amount of compost or balanced organic fertilizer at planting time can promote healthy growth. Avoid excessive use of high-nitrogen fertilizers, as this can lead to poor root development.</li>
+
+                <li>Planting: Direct sow radish seeds into the soil 1–2 cm deep, spaced about 2–5 cm apart in rows that are 20–30 cm apart. For continuous harvesting, sow seeds every 2 weeks. Radishes grow quickly, with many varieties maturing in 25–40 days.</li>
+
+                <li>Watering: Radishes require consistent moisture, especially during the early growth stages, to develop proper root size. Water regularly to keep the soil moist but not soggy. Avoid letting the soil dry out, as this can cause the roots to become woody and develop a bitter taste.</li>
+
+                <li>Weeding: Weeding is essential early in the growing process to prevent competition for nutrients. Once established, radishes' foliage will help suppress weeds. Be careful when weeding to avoid damaging the tender roots.</li>
+
+                <li>Thinning: If seeds are sown too closely together, thin the seedlings to about 5–7 cm apart to allow enough space for the roots to grow properly. Thinning also helps reduce the risk of disease and pests.</li>
+
+                <li>Harvesting: Radishes are usually ready for harvest 25–40 days after sowing, depending on the variety. Harvest when the roots have reached their full size (about 2.5–5 cm in diameter). Radishes that stay in the ground too long may become tough and pithy, so it’s best to harvest them early.</li>
+                         
+                <li>Post-harvest Management: After harvesting, wash radishes thoroughly to remove soil. Store them in the refrigerator, where they can stay fresh for up to a week. Radishes can also be stored in a cool, dark place with high humidity for longer shelf life.</li>
+             </ul>           
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

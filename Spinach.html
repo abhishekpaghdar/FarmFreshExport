@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Spinach/spinachseeds_500x.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Spinach</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Spinach/0..jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spinach/0.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spinach/1.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spinach/2.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Spinach/spinachseeds_500x.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Spinach grows best in well-drained, loamy or sandy loam soil rich in organic matter, with a pH range of 6.0–7.0. The soil should be fertile and have good moisture retention capabilities. Adding compost or organic manure before planting enhances soil fertility and promotes healthy leaf growth.</li>
+
+               <li> Climate: Spinach thrives in cooler climates with temperatures between 10–20°C. It is a cool-season crop that can tolerate some frost, but high temperatures (above 25°C) can cause it to bolt (flower and go to seed) prematurely. Spinach grows best in the spring or fall, but it can also be grown in mild winter conditions in cooler climates.</li>
+
+               <li> Fertilizer: Spinach is a heavy feeder, so it benefits from well-rotted compost or organic manure before planting. During the growing season, apply a balanced fertilizer (N-P-K) or side-dress with compost to encourage vigorous leaf growth. Avoid excess nitrogen, which can result in lush leaves but poor taste and texture.</li>
+
+               <li> Planting: Spinach can be grown from seeds, directly sown into the soil. Sow seeds 1–2 cm deep, spaced 5–10 cm apart, in rows 30–45 cm apart. For continuous harvesting, sow seeds every 2–3 weeks to ensure a steady supply. Thin seedlings to 20–25 cm apart once they reach a height of 5–7 cm to allow room for proper growth.</li>
+
+               <li> Watering: Spinach requires regular watering, especially during dry periods, to maintain consistent soil moisture. Water deeply and evenly, avoiding wetting the foliage to reduce the risk of fungal diseases. The soil should be kept consistently moist but not waterlogged.</li>
+
+               <li> Weeding: Weeding is important, especially in the early stages of growth, to reduce competition for nutrients and moisture. Mulching around the plants can help keep weeds down and maintain soil moisture. Be careful when weeding to avoid disturbing the roots.</li>
+
+               <li> Thinning: Thin out seedlings if they are too crowded, leaving 20–25 cm between plants to allow for healthy leaf development and air circulation.</li>
+
+               <li> Harvesting: Spinach leaves are ready for harvest in 4–6 weeks after sowing, depending on the variety. Harvest the outer leaves first, leaving the inner ones to continue growing. You can also harvest the entire plant at once. For baby spinach, harvest early, when the leaves are tender. For mature spinach, allow the plants to grow until the leaves are fully formed.</li>
+
+               <li> Post-harvest Management: After harvesting, wash spinach leaves thoroughly to remove any dirt or pesticides. Fresh spinach can be stored in the refrigerator for 3–5 days. For longer storage, spinach can be blanched and frozen for use in soups and stews.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

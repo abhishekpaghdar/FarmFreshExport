@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <!-- Image Slider Section -->
+    <section class="slider-container">
+        <div class="slides">
+            <img src="img/slid1.jpg" alt="Slide 1">
+            <img src="img/slid2.jpg" alt="Slide 2">
+            <img src="img/slid3.jpg" alt="Slide 3">
+            <img src="img/slid4.jpg" alt="Slide 4">
+        </div>
+        <!-- Navigation buttons -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <!-- Dots for navigation -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section><br><br>
+    <!-- image slider end -->
+
+    <!--product section -->
+    <section class="our-products">
+        <h2>Top Products</h2>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <a href="Tomato.html">
+                    <img src="Export pro img/tamotos.jpg" alt="Product 1" class="product-image">
+                    <div class="product-info">
+                        <h3>Tomato</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <a href="Peas.html">
+                    <img src="Export pro img/WhatsApp Image 2024-11-11 at 12.55.51_2190a7c6.jpg" alt="Product 2" class="product-image">
+                    <div class="product-info">
+                        <h3>Peas</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <a href="Coriander.html">
+                    <img src="Export pro img/613G8cC0JqL.SS700.jpg" alt="Product 3" class="product-image">
+                    <div class="product-info">
+                        <h3>Coriander</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <a href="Mung Beans.html">
+                    <img src="import pro img/Mung/6.jpg" alt="Product 4" class="product-image">
+                    <div class="product-info">
+                        <h3>Mung Beans</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <a href="Raw Mango.html">
+                    <img src="Export pro img/raw mango.jpg" alt="Product 5" class="product-image">
+                    <div class="product-info">
+                        <h3>Raw Mango</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <a href="Chiekpea Flour.html">
+                    <img src="import pro img/Chiekpea Flour/besan.jpg" alt="Product 6" class="product-image">
+                    <div class="product-info">
+                        <h3>Chiekpea Flour</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="all-product-btn">
+            <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+        </div>
+    </section>
+    <!-- product section end -->
+     <br><br>
+
+    <!-- About Us -->
+    <div class="container">
+        <h1 class="title">About Us</h1>
+        <div class="about-content">
+            <div class="image">
+                <img src="img/bg.jpg" alt="">
+            </div>
+            <div class="content">
+                <p>Welcome to Farm Fresh Exports, a trusted leader in the global trade of fresh, high-quality
+                    vegetables. With a commitment to excellence and sustainability, we source the finest produce from
+                    local farmers and deliver it to markets worldwide. Our dedication to quality control, timely
+                    delivery, and customer satisfaction makes us a preferred partner for businesses across the globe.
+                </p><br>
+                <p>Founded with a passion for agriculture and a mission to bridge the gap between local farms and
+                    international markets, we bring an extensive range of fresh, organic, and seasonal vegetables to
+                    consumers around the world. Each step of our process, from cultivation to delivery, is carefully
+                    managed to ensure that only the best reaches your shelves.
+                </p>
+                <a href="aboutus.html" class="readmore">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- About Us end -->
+
+    
+
+    <!--Exports -->
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="img/Afghanistan.png" alt="Company Logo1">
+            <img src="img/Angola.png" alt="Company Logo2">
+            <img src="img/Armenia.png" alt="Company Logo3">
+            <img src="img/Australia.png" alt="Company Logo4">
+            <img src="img/Bahrain.png" alt="Company Logo5">
+            <img src="img/Cairo.png" alt="Company Logo6">
+            <img src="img/Congo.png" alt="Company Logo7">
+            <img src="img/Dominica.png" alt="Company Logo8">
+            <img src="img/Egypt.png" alt="Company Logo9">
+            <img src="img/Ethiopia.png" alt="Company Logo10">
+            <img src="img/Gabon.png" alt="Company Logo11">
+            <img src="img/Greece.png" alt="Company Logo12">
+            <img src="img/Kazakhstan.png" alt="Company Logo13">
+            <img src="img/Kosovo.png" alt="Company Logo14">
+            <img src="img/Lithonia.png" alt="Company Logo15">
+            <img src="img/Malta.png" alt="Company Logo16">
+            <img src="img/Monaco.png" alt="Company Logo17">
+            <img src="img/Morocco.png" alt="Company Logo18">
+            <img src="img/Myanmar.png" alt="Company Logo19">
+            <img src="img/New Zealand.png" alt="Company Logo20">
+            <img src="img/Qatar.png" alt="Company Logo21">
+            <img src="img/Romania.png" alt="Company Logo22">
+            <img src="img/Singapore.png" alt="Company Logo23">
+            <img src="img/Sri-Lanka.png" alt="Company Logo24">
+            <img src="img/Sudan.png" alt="Company Logo25">
+            <img src="img/Turkey.png" alt="Company Logo26">
+            <img src="img/Uganda.jpeg" alt="Company Logo27">
+            <img src="img/zimbabwe.png" alt="Company Logo28">
+        </div>
+    </div>
+
+    <!--import section -->
+    <div class="logos1">
+        <div class="logo_items1">
+            <img src="img1/Mexico.png">
+            <img src="img1/Morocco.png">
+            <img src="img1/Netherlands.png">
+            <img src="img1/Nigeria.png">
+            <img src="img1/Niue.png">
+            <img src="img1/Norway.png">
+            <img src="img1/Oman.png">
+            <img src="img1/Palau.png">
+            <img src="img1/Philippines.png">
+            <img src="img1/Portugal.png">
+            <img src="img1/Rwanda.png">
+            <img src="img1/Senegal.png">
+            <img src="img1/Serbia.png">
+            <img src="img1/Somalia.png">
+            <img src="img1/Sweden.png">
+            <img src="img1/Tonga.png">
+            <img src="img1/Uganda.png">
+            <img src="img1/Vietnam.png">
+            <img src="img1/Yemen.png">
+            <img src="img1/Zambia.png">
+        </div>
+        <div class="logo_items1">
+            <img src="img1/Mexico.png">
+            <img src="img1/Morocco.png">
+            <img src="img1/Netherlands.png">
+            <img src="img1/Nigeria.png">
+            <img src="img1/Niue.png">
+            <img src="img1/Norway.png">
+            <img src="img1/Oman.png">
+            <img src="img1/Palau.png">
+            <img src="img1/Philippines.png">
+            <img src="img1/Portugal.png">
+            <img src="img1/Rwanda.png">
+            <img src="img1/Senegal.png">
+            <img src="img1/Serbia.png">
+            <img src="img1/Somalia.png">
+            <img src="img1/Sweden.png">
+            <img src="img1/Tonga.png">
+            <img src="img1/Uganda.png">
+            <img src="img1/Vietnam.png">
+            <img src="img1/Yemen.png">
+            <img src="img1/Zambia.png">
+        </div>
+    </div>
+    <div class="box">    
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

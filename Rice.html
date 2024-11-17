@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Rice/5.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Rice</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Rice/1.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Rice/2.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Rice/3.png" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Rice/4.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Rice/5.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Clay or clay loam soil with good water retention and a pH range of 5.5–6.5 is ideal for rice cultivation. Ensure the soil has adequate drainage to prevent waterlogging during early growth stages.</li>
+
+                <li>Climate: Rice grows best in warm, humid climates with temperatures between 20–30°C. Consistent rainfall or a reliable irrigation system is crucial, especially during the vegetative and grain-filling stages.</li>
+
+                <li>Fertilizer: Apply organic fertilizers such as compost or farmyard manure before planting. Supplement with nitrogen-rich fertilizers every 20–25 days to encourage healthy growth.</li>
+
+                <li>Planting: Prepare the soil by ploughing and leveling it to ensure uniform water distribution. In flooded systems, create leveled fields for proper water management, or use rows spaced 20–25 cm apart in direct-seeded methods.</li>
+
+                <li>Transplanting: Transplant rice seedlings when they are about 20–25 days old. Water the field beforehand to ease planting, and ensure the seedlings are spaced about 15–20 cm apart for optimal growth.</li>
+
+                <li>Watering: Regular irrigation is essential for rice. Maintain a flooded field during the vegetative stage and a controlled water level during the grain-filling stage, then drain water 10–15 days before harvest.</li>
+
+                <li>Weeding: Begin weeding about 2–3 weeks after transplanting and continue as necessary, especially in the early growth stages, to minimize competition.</li>
+
+                <li>Harvesting: Rice is ready to harvest 110–150 days after planting, depending on the variety. Harvest when the grains turn golden and are firm.</li>
+
+                <li>Post-harvest Management: Thresh and clean the harvested rice to remove impurities. Store in a cool, dry, and ventilated area to prevent mold or pest damage.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

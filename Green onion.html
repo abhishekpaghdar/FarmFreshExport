@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Green onion/green onion.jpeg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Green onions</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Green onion/0.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Green onion/1.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Green onion/2.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Green onion/5.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Green onion/green onion.jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Green onions grow best in well-drained, loamy or sandy loam soil rich in organic matter, with a pH range of 6.0–7.0. The soil should be loose and well-aerated to allow for easy root growth. Adding compost or well-decomposed manure helps improve soil fertility.</li>
+
+                <li>Climate: Green onions thrive in cooler climates with temperatures between 13–24°C. They can tolerate a range of temperatures, but they grow best in moderate climates, as extreme heat can cause them to bolt (flower prematurely).</li>
+
+                <li>Fertilizer: Green onions are light feeders, but applying a balanced organic fertilizer or compost at planting time promotes strong growth. Additional light feeding with a nitrogen-rich fertilizer can be beneficial during growth, especially if the soil is not very fertile.</li>
+
+                <li>Planting: Green onions can be grown from seeds, transplants, or even kitchen scraps. To grow from seeds, sow them about 1–2 cm deep, spacing them 10–15 cm apart in rows. If using transplants or scraps (cuttings), plant them 1–2 cm deep and space them similarly. Green onions can be grown in containers or directly in the ground.</li>
+
+                <li>Watering: Green onions require consistent moisture for proper growth. Water regularly, especially during dry periods, to maintain soil moisture. However, avoid waterlogging, as this can lead to root rot. Drip irrigation is ideal, as it provides steady moisture without wetting the foliage.</li>
+
+                <li>Weeding: Weeding is important in the early stages of growth to reduce competition for nutrients. Once established, the green onions' dense foliage helps to suppress weed growth.</li>
+
+                <li>Thinning: If seedlings are too crowded, thin them out to about 5–7 cm apart to allow enough space for the onions to grow properly. This will help reduce competition for nutrients and water.</li>
+                           
+                <li>Harvesting: Green onions are typically ready for harvest in 8–12 weeks from sowing, depending on the variety and growing conditions. Harvest when the stems are about 20–30 cm tall. You can pull the entire plant or cut off the outer stalks, leaving the smaller ones to continue growing.</li>
+
+                <li>Post-harvest Management: Green onions are best used fresh, but they can be stored in the refrigerator for up to a week in a damp paper towel or sealed container. Alternatively, they can be regrown by placing the roots in a glass of water, where new shoots will emerge.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Ginger/211 Ginger 250 g-1100x1100w.jpg.webp" alt="Product Image" class="main-image">
+                <h2 class="product-name">Ginger</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Ginger/0..jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ginger/1.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ginger/2.JPG" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ginger/3..jpeg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ginger/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Ginger thrives in well-drained, loamy, or sandy loam soil rich in organic matter, with a slightly acidic pH range of 5.5–6.5. The soil should be loose and well-aerated to facilitate the growth of rhizomes. Adding compost or well-decomposed manure before planting helps improve soil structure and fertility.</li>
+
+                <li>Climate: Ginger prefers warm, tropical climates with temperatures between 25–30°C. It requires a frost-free, humid environment with consistent rainfall or irrigation. Ginger grows best in partial shade but can also tolerate full sunlight in cooler climates.</li>
+
+                <li>Fertilizer: Apply organic fertilizers like compost, farmyard manure, or well-decomposed organic matter to improve soil fertility before planting. Additionally, use a balanced N-P-K fertilizer during the growing season to encourage healthy root development. A high-potassium fertilizer can be applied once ginger plants start flowering to boost rhizome production.</li>
+
+                <li>Planting: Ginger is propagated from rhizomes rather than seeds. Choose healthy, disease-free rhizomes with visible buds (also called "eyes"). Cut the rhizomes into 5–7 cm pieces, each with at least one bud, and allow the cuts to dry for a day or two to prevent rot. Plant the pieces 5–10 cm deep in rows spaced 30 cm apart, with each piece 20–30 cm apart.</li>
+
+                <li>Mulching: After planting, apply a layer of mulch (such as straw or leaves) to retain moisture, regulate temperature, and suppress weeds. Ginger requires a humid environment, so mulching also helps maintain soil moisture.</li>
+
+                <li>Watering: Ginger requires regular watering to maintain consistent moisture, especially during the growing season. Ensure the soil is kept moist, but avoid waterlogging, as it can lead to rhizome rot. Drip irrigation is ideal to provide steady moisture.</li>
+
+                <li>Weeding: Begin weeding as soon as the ginger plants are established, being careful not to disturb the rhizomes. Mulching also helps reduce weed growth around the plants.</li>
+
+                <li>Harvesting: Ginger is typically ready for harvest 8–10 months after planting, when the leaves start to yellow and die back. For younger, tender ginger, it can be harvested earlier, around 6–7 months. Carefully dig up the rhizomes without damaging them. You can harvest part of the rhizome and leave the rest in the soil for continued growth.</li>
+
+                <li>Post-harvest Management: After harvesting, wash the ginger rhizomes thoroughly to remove soil. Allow the rhizomes to dry for 1–2 days in a cool, shaded area. If storing for longer periods, cure the ginger by leaving it in a dry, ventilated space for a few days before storing it in a cool, dark place. Ginger can be stored in the refrigerator or processed into dried or powdered ginger.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Brinjal/5.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Brinjal</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Brinjal/0.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Brinjal/1.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Brinjal/2.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Brinjal/3.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Brinjal/4.webp" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="Export pro img/Brinjal/5.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Brinjal grows best in well-drained, loamy or sandy loam soil rich in organic matter, with a pH range of 6.0–7.0. Enrich the soil with compost or well-decomposed manure before planting to improve fertility and moisture retention.</li>
+
+                <li>Climate: Brinjal thrives in warm climates with temperatures between 25–30°C. It requires a sunny location and is sensitive to frost and cold temperatures, so plant it during warmer seasons or in regions with mild winters.</li>
+
+                <li>Fertilizer: Apply organic fertilizers, like compost or farmyard manure, before planting. During growth, use a balanced N-P-K fertilizer every 3–4 weeks to promote healthy foliage and fruit development.Like using sour buttermilk, neem oil, lemon etc.</li>
+
+                <li>Planting: Start seeds in a nursery or seed tray, and transplant seedlings when they are 6–8 weeks old, with 4–5 true leaves. Space plants about 45–60 cm apart in rows that are 75–90 cm apart for good airflow and access to sunlight.</li>
+
+                <li>Staking: Brinjal plants can grow tall and may need staking or support to keep the plants upright, especially during fruiting. This reduces the risk of plants bending or breaking under the weight of the fruits.</li>
+
+                <li>Watering: Water brinjal regularly to maintain consistent soil moisture, especially during flowering and fruiting stages. Avoid waterlogging, as brinjal roots are prone to rot.</li>
+
+                <li>Weeding: Begin weeding when the plants are established, and continue periodically to reduce competition for nutrients and promote better airflow around the plants.</li>
+
+                <li>Harvesting: Brinjal is typically ready for harvest 70–90 days after transplanting, depending on the variety. Harvest when the fruits are glossy, firm, and have reached their mature size. Overripe fruits may become bitter and tough.</li>
+
+                <li>Post-harvest Management: Handle harvested brinjal carefully to avoid bruising. Store them in a cool, dry place, but avoid refrigeration, as brinjal is sensitive to cold temperatures.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="import pro img/Dry beans/6.png" alt="Product Image" class="main-image">
+                <h2 class="product-name">Black Eyed Peas</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="import pro img/Dry beans/1.jpg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Dry beans/2.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="import pro img/Dry beans/3.jpg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="import pro img/Dry beans/4.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Dry beans/5.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                <img src="import pro img/Dry beans/6.png" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>First, till your soil properly. Then choose an organic black eyed pea variety that suits you and plant it. Sowing should be done in rows at a distance of 25-30 cm. The seeds should be sown at a depth of 2-3 cm with a seed drill or behind the plough. They can grow well in poor soil with a mixture of 85% sand and 0.2% organic matter and a little phosphorus.</li>
+
+                <li>When the eyed peas are 20 days old, weeds at the initial stage of growth will be appropriate. Apply organic fertilizers at appropriate times for crop and soil development. In the early stages of planting, Weeding problems are severe.</li>
+
+                <li>Crop When after 30-40 days the crop covers the land area and thus, the problem of weed infestation is reduced. Spray organic matter like neem oil, jaggery to kill the living insects and diseases.</li>
+
+                <li>Water management Kharif crops generally do not require irrigation except in case of prolonged dry spells, the crop should be irrigated at 10-12 day intervals. But, summer crops require 6-7 waterings at 8-10 days interval. Adequate weed control is essential for good growth and high yields.</li>
+
+                <li>Weeding should be done when the pods come to fruition and organic matter should be applied according to the plant.</li>
+
+                <li>Harvest Management Rainy season crop is harvested 50-60 days after sowing at 50% flowering stage. Black-eyed peas are ready to harvest when the pods are brown and dry. Hand Pruning Tools Use sickles to collect plants. Whereas summer crops require a few more days and should be harvested after 70-75 days of sowing.</li>
+
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park 
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

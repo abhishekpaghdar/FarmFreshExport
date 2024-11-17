@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Exports</title>
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allcss.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo.jpg' alt="Logo" /></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar end-->
+
+    <div class="product-details">
+        <!-- Image Gallery on the Left -->
+        <div class="image-gallery">
+            <div class="main-image-container">
+                <img id="main-image" src="Export pro img/Ridge Gourd/Ridge Gourd.jpg" alt="Product Image" class="main-image">
+                <h2 class="product-name">Ridge gourd</h2>
+            </div>
+            <div class="thumbnail-images">
+                <img src="Export pro img/Ridge Gourd/0.png" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ridge Gourd/1.jpeg" alt="Thumbnail Image 4" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ridge Gourd/4.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ridge Gourd/5.jpeg" alt="Thumbnail Image 1" onclick="changeMainImage(this)">
+                <img src="Export pro img/Ridge Gourd/Ridge Gourd.jpg" alt="Thumbnail Image 2" onclick="changeMainImage(this)">
+                
+            </div>
+        </div>
+
+        <!-- Product Description on the Right -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <ul>
+                <li>Soil: Ridge gourd grows best in well-drained, loamy or sandy loam soil rich in organic matter, with a pH range of 6.5–7.5. Adding compost or well-decomposed manure before planting improves soil fertility and water retention.</li>
+
+                <li>Climate: Ridge gourd thrives in warm, tropical to subtropical climates with temperatures between 25–30°C. It requires full sunlight and grows best in warm seasons, as it is sensitive to frost and cold temperatures.</li>
+
+                <li>Fertilizer: Apply organic fertilizers, like compost or farmyard manure, before planting. Supplement with balanced N-P-K fertilizer every 3–4 weeks to encourage healthy foliage and fruiting.Like using sour buttermilk, neem oil, lemon etc.</li>
+
+                <li>Planting: Sow ridge gourd seeds directly into the soil or start them in a nursery tray. Plant seeds about 2–3 cm deep, spaced 60–90 cm apart in rows spaced 1.5–2 meters apart for optimal growth and airflow.</li>
+
+                <li>Support: Ridge gourd is a climbing vine and requires support for vertical growth. Use trellises, stakes, or netting to keep the vines off the ground, which improves sunlight exposure, airflow, and makes harvesting easier.</li>
+
+                <li>Watering: Water regularly, especially during flowering and fruiting stages, to keep the soil consistently moist. Avoid overwatering, as ridge gourd does not tolerate waterlogged conditions well.</li>
+
+                <li>Weeding: Start weeding when the plants are young, and continue as necessary to reduce competition for nutrients and maintain a healthy growing environment.</li>
+
+                <li>Harvesting: Ridge gourd is typically ready for harvest 50–60 days after planting. Harvest when the fruits are tender, about 15–25 cm in length, as they become tough and fibrous as they mature.</li>
+
+                <li>Post-harvest Management: Clean harvested ridge gourds to remove soil or debris, and store them in a cool, dry place. Ridge gourd has a short shelf life, so consume or process it shortly after harvesting.             </li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="all-product-btn">
+        <button class="view-product" onclick="myproduct()"><a href="all_product.html">View All Products</a></button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="img/logo1.png" alt="Company Logo">
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="export_product.html">Export</a></li>
+                    <li><a href="import_product.html">Import</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+                <h3 class="con">Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i>+971 54 712 2061</li>
+                    <li><i class="fas fa-envelope"></i> info@farmfreshexport.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Hills Business Park
+                        Office 403 Building 3
+                        Hills-Dubai</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div class="footer-copyright">
+            &copy; 2024 Farm Fresh Exports. All rights reserved.
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
